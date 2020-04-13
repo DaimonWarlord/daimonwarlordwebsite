@@ -148,13 +148,10 @@ img#brand-logo {
           align-items: center;
   height: 100vh;
   margin: 0 0 50px;
-  background: #ff3b3b;
   margin: 5% auto;
   padding: 20px;
   color: #333;
   width: 80%;
-  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   -webkit-animation-name: modalopen;
           animation-name: modalopen;
   -webkit-animation-duration: 1s;
@@ -181,11 +178,28 @@ img#brand-logo {
 
 .modal-content #sign-in-close-btn {
   color: #333;
-  font-size: 50px;
+  background: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  width: 10px;
+  height: 75px;
+  border: 1px solid #ff3b3b;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 
 .modal-content #sign-in-close-btn:hover {
   color: #fff;
+  background: #ff3b3b;
+  border: 1px solid #fff;
 }
 
 .modal-content a {
@@ -268,6 +282,10 @@ img#brand-logo {
   transition: -webkit-transform 80ms ease-in;
   transition: transform 80ms ease-in;
   transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
+}
+
+.modal-content button:hover {
+  cursor: pointer;
 }
 
 .modal-content button:active {
